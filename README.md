@@ -14,7 +14,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.leinardi.android:android-checkstyle-plugin:1.0.0'
+        classpath 'com.leinardi.android:android-checkstyle-plugin:1.1.0'
     }
 }
 
@@ -23,7 +23,7 @@ apply plugin: 'com.leinardi.android.checkstyle'
 checkstyle {
     ignoreFailures = true // Whether this task will ignore failures and continue running the build.
     configFile rootProject.file('config/checkstyle/checkstyle.xml') // The Checkstyle configuration file to use.
-    toolVersion = '8.2' // The version of Checkstyle you want to be used
+    toolVersion = '8.11' // The version of Checkstyle you want to be used
 }
 ```
 

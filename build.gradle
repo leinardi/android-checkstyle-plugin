@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        google()
         jcenter()
     }
 
@@ -8,8 +9,8 @@ buildscript {
 }
 
 plugins {
-    id "com.gradle.plugin-publish" version "0.9.7"
-    id "com.jfrog.bintray" version "1.7.3"
+    id "com.gradle.plugin-publish" version "0.9.10"
+    id "com.jfrog.bintray" version "1.8.4"
 }
 
 apply plugin: 'maven'
@@ -26,7 +27,7 @@ dependencies {
 
     compile gradleApi()
     compile localGroovy()
-    compile 'com.android.tools.build:gradle:3.0.0-beta7'
+    compile 'com.android.tools.build:gradle:3.2.0-beta04'
 }
 
 group = GROUP_ID
